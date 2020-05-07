@@ -1,6 +1,6 @@
 """
 The data_io module is responsible for all reading and writing to the file
-system
+system 
 """
 
 import json
@@ -10,7 +10,7 @@ import pickle
 
 
 def store_object(obj, file_name):
-    """ Stores object as a pickle file """
+    """ Stores object as a pickle file"""
     with open(file_name, 'wb') as handle:
         pickle.dump(obj, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
